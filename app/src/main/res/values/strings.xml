@@ -1,0 +1,11 @@
+<resources>
+<string name="app_name">Hydro</string>
+<string name="hydro_title">Hydro</string>
+<string name="real_time_value">REAL TIME VALUE 🔴</string>
+<string name="room_temp">Room Temp</string>
+<string name="water_temp">Water Temp</string>
+<string name="ph_sensor_feed">Ph Sensor Feed</string>
+<string name="turn_motor_on">Turn Motor ON</string>
+<string name="turn_motor_off">Turn Motor OFF</string>
+<string name="illustration_desc">Dashboard Illustration showing people and nature</string>
+</resources>

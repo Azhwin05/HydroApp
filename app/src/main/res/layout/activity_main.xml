@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Bottom Left Circle -->
+    <ImageView
+        android:id="@+id/ellipse1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ellipse1"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:translationY="80dp" />
+
+    <!-- Bottom Right Circle -->
+    <ImageView
+        android:id="@+id/ellipse2"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ellipse2"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:translationY="60dp" />
+
+    <!-- Scrollable Login Form -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- Welcome Text -->
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome back"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginTop="48dp"
+                android:textColor="#000000" />
+
+            <!-- Login Prompt -->
+            <TextView
+                android:id="@+id/loginPrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login to your account"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_bold" />
+
+            <!-- Email Field -->
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter Email"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginTop="24dp"
+                android:padding="12dp"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/poppins_bold"/>
+
+            <!-- Password Field -->
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Password"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginTop="16dp"
+                android:padding="12dp"
+                android:inputType="textPassword"
+                android:fontFamily="@font/poppins_bold"/>
+
+            <!-- Remember Me + Forgot Password -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp">
+
+                <CheckBox
+                    android:id="@+id/rememberMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remember me"
+                    android:fontFamily="@font/poppins_bold"/>
+
+                <TextView
+                    android:id="@+id/forgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password?"
+                    android:textColor="#30B979"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_bold" />
+            </LinearLayout>
+
+            <!-- Login Button -->
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Log In"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#30B979"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/poppins_bold" />
+
+            <!-- Sign Up Button -->
+
+            <!-- OR Divider -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="25dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#30B979" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  OR  "
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#30B979" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/signupButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Sign Up"
+                android:textColor="#30B979"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
